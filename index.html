@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Pets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .remaining-height {
+        height: calc(100vh - 1024px);
+      }
+      @font-face {
+        font-family: "Minimal3x5";
+        src: url("./fonts/minimal3x5.ttf") format("truetype");
+      }
+      body {
+        font-family: "Minimal3x5", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="relative">
+    <!-- Background -->
+    <div class="w-full h-full">
+      <div class="w-full h-[40px] bg-[#FFE762]"></div>
+      <div class="w-full h-[40px] bg-[#FFD255]"></div>
+      <div class="w-full h-[40px] bg-[#FFBE46]"></div>
+      <div class="w-full h-[40px] bg-[#FFA838]"></div>
+      <div class="w-full h-[40px] bg-[#FF952B]"></div>
+      <div class="w-full h-[40px] bg-[#FF7C1B]"></div>
+      <div class="w-full h-[40px] bg-[#FF690F]"></div>
+      <div class="w-full h-[40px] bg-[#FF5400]"></div>
+      <div class="w-full h-[384px] bg-[#FF5400]"></div>
+      <div class="w-full h-[40px] bg-[#FF5400]"></div>
+      <div class="w-full h-[40px] bg-[#FF690F]"></div>
+      <div class="w-full h-[40px] bg-[#FF7C1B]"></div>
+      <div class="w-full h-[40px] bg-[#FF952B]"></div>
+      <div class="w-full h-[40px] bg-[#FFA838]"></div>
+      <div class="w-full h-[40px] bg-[#FFBE46]"></div>
+      <div class="w-full h-[40px] bg-[#FFD255]"></div>
+      <div class="w-full h-[40px] bg-[#FFE762]"></div>
+      <div class="w-full remaining-height bg-[#FFE762] relative">
+        <div class="absolute top-0 left-0 w-full">
+          <img src="./assets/Divider.svg" class="w-full h-full hidden md:block" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- Main -->
+    <main class="absolute h-full w-full top-0 left-0">
+      <div class="max-w-[1170px] mx-auto w-full h-full flex flex-col overflow-y-auto  space-y-[80px] md:space-y-0 md:justify-between pt-12 pb-8 px-4 2xl:px-0">
+        <header class="w-full flex items-center justify-between space-x-10 ">
+          <div>
+            <img src="./assets/Logo.svg" class="w-full h-full" alt="" />
+          </div>
+
+          <div>
+            <button class=" bg-[#FF5400] text-white text-[18px] h-[48px] min-w-[178px] border-4 border-black ring-4 ring-white hover:scale-105 duration-200">
+                Connect Wallet
+            </button>
+          </div>
+        </header>
+        <!-- <div class=" w-full h-[100px]"></div> -->
+        <div class=" w-full flex md:flex-row flex-col  md:justify-between space-y-8 md:space-y-0 items-center text-white">
+            <div class=" max-w-[670px]">
+                <h1 class=" text-[38px] sm:text-[44px] text-center md:text-start md:text-[50px]  lg:text-[73px]">
+                    Dropping in 16 Days
+                </h1>
+                <p class=" text-[28px] text-center md:text-start lg:text-[32px]">
+                    The biggest Ordinals airdrop to welcome the OGs from other chains to Bitcoin.
+                </p>
+
+                <div class=" flex items-center justify-center md:justify-start space-x-4 md:space-x-8 pt-10">
+                    <button class=" bg-[#FFE762] text-black text-[18px] h-[48px] min-w-[174px] md:min-w-[194px] border-4 border-black ring-4 ring-white hover:scale-105 duration-200">
+                        CLAIM Allocation
+                    </button>
+
+                    <div class=" flex items-center space-x-2 md:space-x-4">
+                        <div class=" w-[24px] h-[24px]">
+                            <img src="./assets/star.svg" class=" w-full h-full object-cover" alt="">
+                        </div>
+                        <span class=" text-[20px] whitespace-nowrap md:text-[28px] lg:text-[32px] pt-1">30,000 Claimed</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" max-w-[270px] w-full">
+                <img src="./assets/dv.svg" alt="">
+            </div>
+        </div>
+        <!-- <div class=" w-full h-[120px]"></div> -->
+        <div class=" w-full flex md:flex-row flex-col  md:justify-between items-center md:space-x-10 text-black">
+            <div class=" max-w-[670px] space-y-4">
+                <h3 class=" text-2xl text-center md:text-start">A Collaboration Between</h3>
+                <div class=" flex items-center space-x-14">
+                    <div>
+                        <img src="./assets/MegaPunks.svg" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/Ninjalerts.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class=" space-y-4  flex flex-col md:items-start items-center">
+                <p class=" text-2xl text-center md:text-start">
+                    Your Web3 community didn't get an allocation?
+                </p>
+                <button class=" bg-[#444444] text-white text-[18px] h-[48px] min-w-[117px] border-4 border-black ring-4 ring-white hover:scale-105 duration-200">
+                    Tweet Us
+                </button>
+            </div>
+        </div>
+        <footer class=" w-full flex justify-between items-center text-[#0D0702]">
+            <p class=" text-2xl text-[#0D0702] text-opacity-40 flex items-center space-x-2">
+                <span>Ninjalerts</span>
+                <img src="./assets/©.svg" class="opacity-40" alt="">
+                <span>2024</span>
+            </p>
+
+            <div class=" space-x-10 flex items-center">
+              <a href="#">
+                <img src="./assets/discord.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="./assets/x.svg" alt="">
+              </a>
+            </div>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
