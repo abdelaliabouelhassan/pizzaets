@@ -21,6 +21,30 @@
       body {
         font-family: "Minimal3x5", sans-serif;
       }
+
+      .gradient-background {
+  background: linear-gradient(
+    to bottom,
+    #FFE762 0%,
+    #FFE762 5%,
+    #FFD255 5%,
+    #FFD255 10%,
+    #FFBE46 10%,
+    #FFBE46 15%,
+    #FFA838 15%,
+    #FFA838 20%,
+    #FF952B 20%,
+    #FF952B 25%,
+    #FF7C1B 25%,
+    #FF7C1B 30%,
+    #FF690F 30%,
+    #FF690F 35%,
+    #FF5400 35%,
+    #FF5400 100%
+  );
+  height: 100%;
+  width: 100%;
+}
     </style>
 
     <script>
@@ -29,12 +53,12 @@
         }
     </script>
   </head>
-  <body class="relative h-screen md:h-fit ">
+  <body class="relative gradient-background  ">
     <div class="absolute bottom-28 left-0 w-full">
       <img src="./assets/Divider.svg" class="w-full h-full hidden md:block" alt="" />
     </div>
     <!-- Background -->
-    <div class="w-full h-full overflow-hidden md:overflow-auto ">
+    <div class="w-full h-full hidden md:block ">
       <div class="w-full h-[40px] bg-[#FFE762]"></div>
       <div class="w-full h-[40px] bg-[#FFD255]"></div>
       <div class="w-full h-[40px] bg-[#FFBE46]"></div>
@@ -57,7 +81,7 @@
       </div>
     </div>
     <!-- Main -->
-    <main class="absolute h-full w-full top-0 left-0 ">
+    <main class=" md:absolute h-full w-full top-0 left-0 ">
       <div class="max-w-[1170px] mx-auto w-full h-full flex flex-col overflow-y-auto   space-y-[80px] md:space-y-0 md:justify-between pt-12 pb-8 px-4 ">
         <header class="w-full flex items-center justify-between space-x-10  ">
           <div>
@@ -66,7 +90,7 @@
 
           <div>
             <button onclick="openModal()" id="connect" class=" bg-[#FF5400] text-white text-[18px] h-[48px] min-w-[178px] border-4 border-black ring-4 ring-white hover:scale-105 duration-200">
-                Connect Wallet test
+                Connect Wallet
             </button>
           </div>
         </header>
